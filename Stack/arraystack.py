@@ -3,8 +3,8 @@ File: arraystack.py
 Project 7.1
 """
 
-from arrays import Array, ArrayExpanded
-from abstractstack import AbstractStack
+from Stack.arrays import Array, ArrayExpanded
+from Stack.abstractstack import AbstractStack
 
 class ArrayStack(AbstractStack):
     """An array-based stack implementation."""
@@ -46,7 +46,6 @@ class ArrayStack(AbstractStack):
     def push(self, item):
         """Inserts item at top of the stack."""
         # Resize array here if necessary
-        print(type(self), self._size)
         if len(self) == len(self._items):
             print("grow")
             self._items.grow()

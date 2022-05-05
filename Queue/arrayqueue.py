@@ -5,8 +5,8 @@ Project 8.3
 Include a remove(index) method for queues.
 """
 
-from arrays import Array
-from abstractcollection import AbstractCollection
+from Queue.arrays import Array
+from Queue.abstractcollection import AbstractCollection
 
 class ArrayQueue(AbstractCollection):
     """An array-based queue implementation."""
